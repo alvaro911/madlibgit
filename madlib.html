@@ -2,26 +2,63 @@
 <html>
 <head>
 	<title>MadLib</title>
+	
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 </head>
 <body>
-	<h1>Mad Lib</h1>
-	<p>
-		Submit 4 different Adverbs, Nouns, Verbs and Adjectives in their respective fields separated by a coma.
-	</p>
-	<div id="user">
-		Verbs: <input type="text" name="verbs" placeholder="Enter 4 verbs" id="verbs"><br/>
-		Nouns: <input type="text" name="nouns" placeholder="Enter 4 nouns" id="nouns"><br/>
-		Adverbs: <input type="text" name="adverbs" placeholder="Enter 4 adverbs" id="adverbs"><br/>
-		Adjectives: <input type="text" name="adject"placeholder="Enter 4 adjectives" id="adjectives"><br/>
-		<button onclick="myFunction()" >Submit</button>
-		<input type="radio" name="stories" value="0" checked>Christmas Tree
-		<input type="radio" name="stories" value="1">Shopping
+	<div class="header_container ">
+		<div class="header col-md-offset-5">
+			<h1>Madlib</h1>
+		</div>
+	</div>
+	<div class="col-md-offset-1">
+		<p>
+			Submit 4 different Adverbs, Nouns, Verbs and Adjectives in their respective fields separated by a coma.
+		</p>
+	</div>
+	<div id="user" class="col-md-12 row">
+		<div class="col-md-offset-3 words">
+			<div class="row">
+				<div class="col-md-3">
+				Verbs: <input type="text" name="verbs" placeholder="Enter 4 verbs" id="verbs" class="rows"><br/>
+				</div>
+
+				<div class="col-md-3">
+				Nouns: <input type="text" name="nouns" placeholder="Enter 4 nouns" id="nouns" class="rows"><br/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					Adverbs: <input type="text" name="adverbs" placeholder="Enter 4 adverbs" id="adverbs" class="rows"><br/>
+				</div>
+				<div class="col-md-3">
+					Adjectives: <input type="text" name="adject"placeholder="Enter 4 adjectives" id="adjectives" class="rows"><br/>
+				</div>
+			</div>
+				<input type="radio" name="stories" value="0" checked>Christmas Tree
+				<input type="radio" name="stories" value="1">Shopping
+			
+			<div class="row btnContainer">
+				
+				<button onclick="myFunction()" class=" submitBtn" >Submit</button>
+				
+				
+			</div>
+		</div>
 	</div>
 	<div id="story">
 		
 	</div>
 	<script src="myJava.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>

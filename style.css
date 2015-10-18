@@ -46,3 +46,28 @@ p{
 .submitBtn:hover {
 	background-color: rgba(115, 72, 108, .75);
 }
+
+#story{
+	width: 75%;
+	height: auto;
+	border:solid #40382a 5px;
+	padding: 10px;
+	border-radius:5px;
+	margin:0 auto 0 auto;
+	clear: both;
+}
+
+strong{
+	color:#499baa;
+}
+
+
+
+
+
+
+
+
+
+
+
